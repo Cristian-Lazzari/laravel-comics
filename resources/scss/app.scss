@@ -1,1 +1,44 @@
+@use './partials/_reset' as *;
+@use './partials/_variable' as *; 
 @import "bootstrap/scss/bootstrap";
+
+
+
+
+/*GENERAL*/
+ul{
+    list-style: none;
+}
+.sub_cont{
+    max-width: 780px;
+    margin: 0 auto
+}
+
+/*HEADER*/
+header{
+    nav{
+        @include dfc;
+        padding: 1rem;
+        gap: 1.1em;
+        ul{
+            @include dfc;
+            gap: .5em;
+        }
+        img{
+            height: 70px;
+        }
+    }
+    .jumbo{
+        aspect-ratio: 4.3;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: top;
+        
+    } 
+}
+
+
+/*MAIN*/
+
+
+/*FOOTER*/
